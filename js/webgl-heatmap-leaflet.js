@@ -103,6 +103,8 @@ L.WebGLHeatMap = L.Class.extend({
         this.canvas.style[L.DomUtil.TRANSFORM] = L.DomUtil
         	.getTranslateString( offset ) + 
         	' scale(' + scale + ') ';
+        
+        this._multiply *= Math.pow(e.scale, 0.5);
     },
 
     move : function () {
