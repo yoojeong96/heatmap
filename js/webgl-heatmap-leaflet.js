@@ -104,7 +104,7 @@ L.WebGLHeatMap = L.Class.extend({
         	.getTranslateString( offset ) + 
         	' scale(' + scale + ') ';
         
-        this._multiply *= Math.pow(e.scale, 0.5);
+        this._multiply *= Math.pow(e.scale, 0.7);
     },
 
     move : function () {

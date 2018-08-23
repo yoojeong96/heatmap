@@ -52,16 +52,16 @@
 
             //custom size for this example, and autoresize because map style has a percentage width
             var heatmap = L.webGLHeatmap({
-                size: 23,
+                size: 25,
                 units: 'px',
-                alphaRange: 0.4
+                alphaRange: 0.3
             });
             
             for ( var i = 0; i < dataPoints.length; ++i )
                 dataPoints[i].push(1.0);
 
             heatmap.setData(dataPoints);
-            heatmap.multiply(0.004);
+            heatmap.multiply(0.006);
 
             map.addLayer(heatmap);
         </script>
